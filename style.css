@@ -4,4 +4,64 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+footer {
+  width: 100%;
+  background-image: url("img/footer/bg_footer.jpg");
+  color: white;
+  padding: 0 12em;
+}
+footer figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
+}
+footer figure img {
+  width: 20%;
+}
+footer h3 {
+  font-family: "fa-light-300", serif;
+  font-size: 2em;
+}
+footer .logo-bas-de-page img {
+  width: 25px;
+  color: white;
+}
+footer .bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  border: 5px solid red;
+  justify-content: space-between;
+}
+footer .bloc li {
+  padding: 0.8em 0;
+}
+footer .bloc ul {
+  border: 5px solid red;
+}
+
+li {
+  font-family: "fa-light-300", sans-serif;
+}
+
+li img {
+  width: 15px;
+}
+
+footer ul:nth-child(3) {
+  width: 30%;
+  color: red;
+}
+
+footer ul:nth-child(4) {
+  max-width: 20%;
+}
+
 /*# sourceMappingURL=style.css.map */
