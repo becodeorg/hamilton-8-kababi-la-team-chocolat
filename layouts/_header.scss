@@ -10,6 +10,7 @@ body {
     header{
         color:$white;
         @include bg_header;
+        background-size: cover;
         width: 100%;
         height: 800px;
         figure{
@@ -195,3 +196,382 @@ body {
         }
     }
 }
+@media (min-width: 426px) and (max-width: 768px){
+body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    header{
+        color:$white;
+        @include bg_header;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        figure{
+            img{
+                width: 80px;
+                height: 25px;
+                margin: 20px;
+            }
+        }
+        nav{
+            @include flex-row;
+            .nav-toggle-icon{
+                width: 30px;
+                height: 30px;
+                visibility: visible;
+                position: relative;
+                top:-15px;
+                left:710px;
+            }
+            ul{
+                @include flex-row;
+                visibility: hidden;
+                #home{
+                    color: $dore;
+
+                    #fleche_menu_couleur{
+                        fill: $dore;
+                    }
+                }
+                li{
+                    margin:20px;
+                    list-style: none;
+                    
+                    font-family: "open",sans-serif;
+                    font-weight: 100;
+                    
+                        .fleche_menu{
+                        width: 10px;
+                        height: 10px;
+                        fill: $white;
+                        }
+                }
+                .lien_hover:hover{
+                    color: $dore;
+                    .fleche_menu{
+                        width: 10px;
+                        height: 10px;
+                        fill: $dore;
+                        }
+                }
+            }
+            
+        }
+        
+          
+        .logo_tel{
+            width: 20px;
+            height: 20px;
+            margin: 0 5px 0 0;
+            visibility: hidden;
+        }
+        p{
+            visibility: hidden;
+        }
+        .float{
+            position: relative;
+            right: -350px;
+            top: -110px;
+            width: 120px;
+            height: 120px;
+        }
+        h1{
+            font-size: 100px;
+            font-weight: 900;
+            width: 300px;
+            position: relative;
+            top:-230px;
+            left:20px;
+            font-family: 'Cinzel', cursive;
+        }
+        // .reserver, p{
+        //     position: relative;
+        //     right: -300px;
+        // }
+        .reserver{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $dore;
+            width: 200px;
+            height: 50px;
+            border: solid 1px $dore;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+            left: -80px;
+            top:-15px;
+
+            a{
+                text-decoration: none;
+                text-align: center;
+                color: $white;
+                font-family: "open",sans-serif;
+                font-weight: 900;
+                width: 200px;
+                height: 50px;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+        #fleche_cote{
+            fill: $white;
+        }
+        
+        .fleche_blanche{
+            width: 20px;
+            height: 10px;
+        }
+        .reserver:hover{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $white;
+                width: 180px;
+                height: 30px;
+                border: solid 1px $white;
+                border-radius: 5px;
+                padding: 20px;
+                margin-left: 20px;
+                position: relative;
+            left: -80px;
+            top:-15px;
+    
+                a{
+                    text-decoration: none;
+                    text-align: center;
+                    color: $dore;
+                    font-family: "open",sans-serif;
+                    font-weight: 900;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+            #fleche_cote{
+                fill: $dore;
+            }
+            
+            .fleche_blanche{
+                width: 20px;
+                height: 10px;
+            }
+
+        }
+        #boutton_play{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            right: -500px;
+            top: -500px;
+        }
+        .explore{
+            width: 220px;
+            height: 50px;
+            background-color: $black;
+            border: solid 1px $grey;
+            border-radius: 5px;
+            position: relative;
+            top:-330px;
+            left: -130px;
+
+            a{
+                color: $white;
+                text-decoration: none;
+                font-family: "open",sans-serif;
+                font-weight: 900;
+            }
+        }
+        .explore:hover{
+            width: 220px;
+            height: 50px;
+            background-color: $white;
+            border: solid 1px $white;
+            border-radius: 5px;
+            position: relative;
+            top:-330px;
+            left: -130px;
+
+            a{
+                color: $dore;
+                text-decoration: none;
+            }
+            #fleche_cote{
+                fill: $dore;
+            }
+            
+            .fleche_blanche{
+                width: 20px;
+                height: 10px;
+            }
+            
+        }
+    }
+}
+}
+@media (max-width: 426px){
+    body {
+        width: 100%;
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: center;
+        header{
+            color:$white;
+            @include bg_header;
+            background-size:cover;
+            width: 425px;
+            height: 600px;
+            figure{
+                img{
+                    width: 80px;
+                    height: 25px;
+                    margin: 20px;
+                }
+            }
+            nav{
+                @include flex-row;
+                .nav-toggle-icon{
+                    width: 30px;
+                    height: 30px;
+                    visibility: visible;
+                    position: relative;
+                    top:-15px;
+                    left:710px;
+                }
+                ul{
+                    @include flex-row;
+                    visibility: hidden;
+                    #home{
+                        color: $dore;
+    
+                        #fleche_menu_couleur{
+                            fill: $dore;
+                        }
+                    }
+                    li{
+                        margin:20px;
+                        list-style: none;
+                        
+                        font-family: "open",sans-serif;
+                        font-weight: 100;
+                        
+                            .fleche_menu{
+                            width: 10px;
+                            height: 10px;
+                            fill: $white;
+                            }
+                    }
+                    .lien_hover:hover{
+                        color: $dore;
+                        .fleche_menu{
+                            width: 10px;
+                            height: 10px;
+                            fill: $dore;
+                            }
+                    }
+                }
+                
+            }
+            
+              
+            .logo_tel{
+                width: 20px;
+                height: 20px;
+                margin: 0 5px 0 0;
+                visibility: hidden;
+            }
+            p{
+                visibility: hidden;
+            }
+            .float{
+                position: relative;
+                right: -350px;
+                top: -110px;
+                width: 120px;
+                height: 120px;
+            }
+            h1{
+                font-size: 100px;
+                font-weight: 900;
+                width: 300px;
+                position: relative;
+                top:-230px;
+                left:20px;
+                font-family: 'Cinzel', cursive;
+            }
+            // .reserver, p{
+            //     position: relative;
+            //     right: -300px;
+            // }
+            .reserver{
+                visibility: hidden;
+                
+    
+                a{
+                    visibility: hidden;
+                }
+            }
+            #fleche_cote{
+                fill: $white;
+            }
+            
+            .fleche_blanche{
+                width: 20px;
+                height: 10px;
+            }
+            
+            #boutton_play{
+                width: 150px;
+                height: 150px;
+                position: relative;
+                right: -500px;
+                top: -500px;
+            }
+            .explore{
+                width: 220px;
+                height: 50px;
+                background-color: $black;
+                border: solid 1px $grey;
+                border-radius: 5px;
+                position: relative;
+                top:-330px;
+                left: -130px;
+    
+                a{
+                    color: $white;
+                    text-decoration: none;
+                    font-family: "open",sans-serif;
+                    font-weight: 900;
+                }
+            }
+            .explore:hover{
+                width: 220px;
+                height: 50px;
+                background-color: $white;
+                border: solid 1px $white;
+                border-radius: 5px;
+                position: relative;
+                top:-330px;
+                left: -130px;
+    
+                a{
+                    color: $dore;
+                    text-decoration: none;
+                }
+                #fleche_cote{
+                    fill: $dore;
+                }
+                
+                .fleche_blanche{
+                    width: 20px;
+                    height: 10px;
+                }
+                
+            }
+        }
+    }
+    }
