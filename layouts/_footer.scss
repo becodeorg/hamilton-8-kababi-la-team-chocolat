@@ -1,12 +1,14 @@
+@import '../base/font';
 footer{
     width: 100%;
     background-image: url("img/footer/bg_footer.jpg");
     color: white;
-    padding: 0 10em;
+    padding: 0 16em;
+    
 
     & figure{
         @include flex-row();
-        padding: 4em 0;
+        padding: 4em 0 3em 0;
 
         & img{
             width: 25%;
@@ -14,63 +16,162 @@ footer{
     }
 
     & h3{
-        font-family: "fa-light-300", serif;
+        font-family: $Cinzel;
         font-size: 2em;
-        
+        padding-bottom: 0.5em;
     }
     
     .basdepage{
         @include flex-row();
         justify-content: space-between;
-        padding-bottom: 6em;
+        padding-bottom: 5em;
+
+        & p{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        & .themes{
+            color: #C8A969;
+        }
+
+        & a{
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border-radius: 50px;
+            color: rgba($color: #fff, $alpha: 0.6);
+        }
     }
     
-    & .basdepage__logo img{
-        width: 25px;
-        color: white;
-    }
-
     & .bloc{
         @include footer-flex-row();
-        border: 5px solid red;
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
         justify-content: space-between;
-        padding-bottom: 6em;
-        margin-bottom: 2em;
-        
+        padding-bottom: 5em;
+        margin-bottom: 1.5em;
 
         & li{
-            padding: 0.8em 0;
+            margin: 1em 0;
         }
-        
-        & ul{
-            
-            border: 5px solid red;
+
+        & a {
+            color: white;
+            opacity: 50%;
         }
     }
 }
 
 li{
-    font-family: "fa-light-300", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
 }
 
 li img{
-    width: 15px;
+    width: 20px;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
 footer ul:nth-child(3){
     width: 30%;
-    color: red;
+    min-width: 30%;
+    
 }
 
 footer ul:nth-child(4){
-    max-width: 20%;
+    max-width: 25%;
 }
 
-.logorond{
+.container{
+    position: relative;
+}
+
+.container__logorond{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    bottom: -3em;
+    left: 49%;
+    transform: translateX(-35%);
+    width: 6em;
+}
+
+/*.basdepage a{
+    @include flex-row;
+    width: 2em;
+    aspect-ratio: 1 / 1;
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    border-radius: 100px;
+    color: rgba($color: #fff, $alpha: 0.6);
+    
     
 }
+*/
+/*.basdepage a{button i {
+    width: 15em;
+}
+*/
+.basdepage ul{
+    @include flex-row();
+    gap: 0.5em;
+    width: auto;
+
+    li{
+        i{
+            @include flex-row;
+            width: 2.5em;
+            aspect-ratio: 1 / 1;
+            background-color: rgba($color: #fff, $alpha: 0.1);
+            border-radius: 100px;
+            color: rgba($color: #fff, $alpha: 0.6);
+
+            &:hover {
+                color: white;
+                background-color: #C8A969;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+input{
+    
+    width: 18em;
+    border-radius: 0;
+    border: none;
+    padding: 1.2em;
+    font-size: 1em;
+}
+
+button{
+    padding: 1.8em;
+    border-radius: 0;
+    border: none;
+    background-color: #C8A969;
+    transform: translate(-15px, -1px);
+    
+    
+
+    i{
+        color: white;
+        }
+}
+footer li{
+    line-height: 2em;
+}
+
+.bloc__logomap {
+    padding-bottom: 1.5em;
+}
+
+input, button{
+    margin-top: 1em;
+}
+
+li a:not(:last-child) {
+    color: white;
+    opacity: 65%;
+}
+
+
