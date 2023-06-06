@@ -1,0 +1,120 @@
+@import "../utils/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@font-face {
+    font-family: "open",sans-serif;
+    src: url(../font/OpenSans_Condensed-Regular.ttf);
+}
+body{
+    main{
+        width: 100%;
+        // @include flex-column;
+        
+    .category{
+        height: 950px;
+        @include flex-row;
+        font-family:"open" , sans-serif;
+        
+        background-image: url("img/category/banner_category.jpg");
+        box-shadow: inset 10000px 0 0 0 rgb(249, 246, 240, 0.5);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        #category_opacity{
+            font-size: 200px;
+            color: #f4eee3;
+            z-index: 1;
+            position: relative;
+            top: -315px;
+            right: -800px;
+            font-family: 'Cinzel', cursive;
+        }
+        .container_titre_article{
+            @include flex-column;
+            width: 1000px;
+            height: 200px;
+            position: relative;
+            top: -350px;
+            left: 150px;
+            margin: 10px;
+            z-index: 2;
+            text-align: center;
+            h2{
+                font-size: 50px;
+                font-family: 'Cinzel', cursive;
+            }
+            p{
+                font-size: 20px;
+            }
+            h2, p{
+                width: 1000px;
+                margin: 10px;
+            }
+        }
+        .container_article_global{
+            @include flex-row;
+            position:relative;
+            right: 1000px;
+            top:50px;
+        }
+        .container_article{
+            @include flex-column;
+            width: 180px;
+            height: 200px;
+            margin: 15px;
+            background-color: $white;
+
+            p{
+                font-size: 18px;
+                color: $black;
+                margin: 20px;
+            }
+            .icon_dore{
+                width: 100px;
+                height: 70px;
+            }
+            .icon_blanc{
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
+            
+            .fleche_blanche{
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+            }
+        }
+        .container_article:hover{
+            @include flex-column;
+            width: 180px;
+            height: 200px;
+            margin: 15px;
+            background-color: $dore;
+
+            p{
+                font-size: 18px;
+                color: $white;
+                margin: 20px;
+            }
+            .icon_dore{
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
+            .icon_blanc{
+                visibility: visible;
+                width: 100px;
+                height: 70px;
+            }
+            
+            .fleche_blanche{
+                fill: $white;
+                width: 20px;
+                height: 20px;
+                margin: 10px;
+            }
+        }   
+    }
+    }
+}
+
