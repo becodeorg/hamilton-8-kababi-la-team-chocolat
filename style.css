@@ -264,11 +264,18 @@ li input, button {
   text-align: center;
 }
 .ourblog__article {
-  gap: 10em;
+  gap: 1em;
   border: 2px solid red;
 }
 
 .ourblog__article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourblog__underimage li {
   display: flex;
   flex-direction: row;
   align-items: center;
