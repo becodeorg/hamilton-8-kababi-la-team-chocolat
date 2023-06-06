@@ -2,6 +2,7 @@
 @import 'utils/mixin';
 @import 'layouts/footer';
 @import 'layouts/header';
-@import 'layouts/main';
 @import 'base/font';
-@import 'layouts/main-ourblog'
+@import 'layouts/main-ourblog';
+@import "layouts/category.scss";
+@import "utils/variables.scss";

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -242,6 +244,545 @@ li input, button {
     grid-template-rows: repeat(2, 1fr);
   }
 }
+@font-face {
+  font-family: "open", sans-serif;
+  src: url(../font/OpenSans_Condensed-Regular.ttf);
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body header {
+  color: white;
+  background-image: url("img/header/banner_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+body header figure img {
+  width: 180px;
+  height: 50px;
+  margin: 25px 0 0 200px;
+}
+body header nav {
+  padding: 30px;
+  position: relative;
+  top: -80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body header nav .nav-toggle-icon {
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+}
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body header nav ul #home {
+  color: #d6ae6a;
+}
+body header nav ul #home #fleche_menu_couleur {
+  fill: #d6ae6a;
+}
+body header nav ul li {
+  margin: 20px;
+  list-style: none;
+  font-family: "open", sans-serif;
+  font-weight: 100;
+}
+body header nav ul li .fleche_menu {
+  width: 10px;
+  height: 10px;
+  fill: white;
+}
+body header nav ul .lien_hover:hover {
+  color: #d6ae6a;
+}
+body header nav ul .lien_hover:hover .fleche_menu {
+  width: 10px;
+  height: 10px;
+  fill: #d6ae6a;
+}
+body header .logo_tel {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0 0;
+}
+body header .float {
+  position: relative;
+  right: -650px;
+  top: -50px;
+  width: 150px;
+  height: 150px;
+}
+body header h1 {
+  font-size: 120px;
+  font-weight: 900;
+  width: 550px;
+  position: relative;
+  top: -200px;
+  right: -250px;
+  font-family: "Cinzel", cursive;
+}
+body header .reserver, body header p {
+  position: relative;
+  right: -300px;
+}
+body header .reserver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6ae6a;
+  width: 180px;
+  height: 30px;
+  border: solid 1px #d6ae6a;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 20px;
+}
+body header .reserver a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: "open", sans-serif;
+  font-weight: 900;
+}
+body header #fleche_cote {
+  fill: white;
+}
+body header .fleche_blanche {
+  width: 20px;
+  height: 10px;
+}
+body header .reserver:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 180px;
+  height: 30px;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 20px;
+}
+body header .reserver:hover a {
+  text-decoration: none;
+  text-align: center;
+  color: #d6ae6a;
+}
+body header .reserver:hover #fleche_cote {
+  fill: #d6ae6a;
+}
+body header .reserver:hover .fleche_blanche {
+  width: 20px;
+  height: 10px;
+}
+body header #boutton_play {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  right: -1550px;
+  top: -300px;
+  z-index: 10;
+}
+body header .explore {
+  width: 220px;
+  height: 50px;
+  background-color: black;
+  border: solid 1px grey;
+  border-radius: 5px;
+  position: relative;
+  top: -300px;
+  left: 100px;
+}
+body header .explore a {
+  color: white;
+  text-decoration: none;
+  font-family: "open", sans-serif;
+  font-weight: 900;
+}
+body header .explore:hover {
+  width: 220px;
+  height: 50px;
+  background-color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  position: relative;
+  top: -300px;
+  left: 100px;
+}
+body header .explore:hover a {
+  color: #d6ae6a;
+  text-decoration: none;
+}
+body header .explore:hover #fleche_cote {
+  fill: #d6ae6a;
+}
+body header .explore:hover .fleche_blanche {
+  width: 20px;
+  height: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body header {
+    color: white;
+    background-image: url("img/header/banner_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  body header figure img {
+    width: 80px;
+    height: 25px;
+    margin: 20px;
+  }
+  body header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body header nav .nav-toggle-icon {
+    width: 30px;
+    height: 30px;
+    visibility: visible;
+    position: relative;
+    top: -15px;
+    left: 710px;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  body header nav ul #home {
+    color: #d6ae6a;
+  }
+  body header nav ul #home #fleche_menu_couleur {
+    fill: #d6ae6a;
+  }
+  body header nav ul li {
+    margin: 20px;
+    list-style: none;
+    font-family: "open", sans-serif;
+    font-weight: 100;
+  }
+  body header nav ul li .fleche_menu {
+    width: 10px;
+    height: 10px;
+    fill: white;
+  }
+  body header nav ul .lien_hover:hover {
+    color: #d6ae6a;
+  }
+  body header nav ul .lien_hover:hover .fleche_menu {
+    width: 10px;
+    height: 10px;
+    fill: #d6ae6a;
+  }
+  body header .logo_tel {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    visibility: hidden;
+  }
+  body header p {
+    visibility: hidden;
+  }
+  body header .float {
+    position: relative;
+    right: -350px;
+    top: -110px;
+    width: 120px;
+    height: 120px;
+  }
+  body header h1 {
+    font-size: 100px;
+    font-weight: 900;
+    width: 300px;
+    position: relative;
+    top: -230px;
+    left: 20px;
+    font-family: "Cinzel", cursive;
+  }
+  body header .reserver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6ae6a;
+    width: 200px;
+    height: 50px;
+    border: solid 1px #d6ae6a;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    left: -80px;
+    top: -15px;
+  }
+  body header .reserver a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "open", sans-serif;
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header #fleche_cote {
+    fill: white;
+  }
+  body header .fleche_blanche {
+    width: 20px;
+    height: 10px;
+  }
+  body header .reserver:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 180px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+    position: relative;
+    left: -80px;
+    top: -15px;
+  }
+  body header .reserver:hover a {
+    text-decoration: none;
+    text-align: center;
+    color: #d6ae6a;
+    font-family: "open", sans-serif;
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .reserver:hover #fleche_cote {
+    fill: #d6ae6a;
+  }
+  body header .reserver:hover .fleche_blanche {
+    width: 20px;
+    height: 10px;
+  }
+  body header #boutton_play {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: -500px;
+    top: -500px;
+  }
+  body header .explore {
+    width: 220px;
+    height: 50px;
+    background-color: black;
+    border: solid 1px grey;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    left: -130px;
+  }
+  body header .explore a {
+    color: white;
+    text-decoration: none;
+    font-family: "open", sans-serif;
+    font-weight: 900;
+  }
+  body header .explore:hover {
+    width: 220px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    left: -130px;
+  }
+  body header .explore:hover a {
+    color: #d6ae6a;
+    text-decoration: none;
+  }
+  body header .explore:hover #fleche_cote {
+    fill: #d6ae6a;
+  }
+  body header .explore:hover .fleche_blanche {
+    width: 20px;
+    height: 10px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body header {
+    color: white;
+    background-image: url("img/header/banner_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 480px;
+  }
+  body header figure img {
+    width: 80px;
+    height: 25px;
+    margin: 20px;
+  }
+  body header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body header nav .nav-toggle-icon {
+    width: 30px;
+    height: 30px;
+    visibility: visible;
+    position: relative;
+    top: -20px;
+    left: 500px;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  body header nav ul #home {
+    color: #d6ae6a;
+  }
+  body header nav ul #home #fleche_menu_couleur {
+    fill: #d6ae6a;
+  }
+  body header nav ul li {
+    margin: 20px;
+    list-style: none;
+    font-family: "open", sans-serif;
+    font-weight: 100;
+  }
+  body header nav ul li .fleche_menu {
+    width: 10px;
+    height: 10px;
+    fill: white;
+  }
+  body header nav ul .lien_hover:hover {
+    color: #d6ae6a;
+  }
+  body header nav ul .lien_hover:hover .fleche_menu {
+    width: 10px;
+    height: 10px;
+    fill: #d6ae6a;
+  }
+  body header .logo_tel {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    visibility: hidden;
+  }
+  body header p {
+    visibility: hidden;
+  }
+  body header .float {
+    position: relative;
+    right: -250px;
+    top: -130px;
+    width: 120px;
+    height: 120px;
+  }
+  body header h1 {
+    font-size: 80px;
+    font-weight: 900;
+    width: 250px;
+    position: relative;
+    top: -230px;
+    left: 20px;
+    font-family: "Cinzel", cursive;
+  }
+  body header .reserver {
+    visibility: hidden;
+  }
+  body header .reserver a {
+    visibility: hidden;
+  }
+  body header #fleche_cote {
+    fill: white;
+  }
+  body header .fleche_blanche {
+    width: 20px;
+    height: 10px;
+  }
+  body header #boutton_play {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: -100px;
+    top: -80px;
+  }
+  body header .explore {
+    width: 220px;
+    height: 50px;
+    background-color: black;
+    border: solid 1px grey;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    left: -130px;
+  }
+  body header .explore a {
+    color: white;
+    text-decoration: none;
+    font-family: "open", sans-serif;
+    font-weight: 900;
+  }
+  body header .explore:hover {
+    width: 220px;
+    height: 50px;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    position: relative;
+    top: -330px;
+    left: -130px;
+  }
+  body header .explore:hover a {
+    color: #d6ae6a;
+    text-decoration: none;
+  }
+  body header .explore:hover #fleche_cote {
+    fill: #d6ae6a;
+  }
+  body header .explore:hover .fleche_blanche {
+    width: 20px;
+    height: 10px;
+  }
+}
 .ourblog {
   width: 100%;
   background-color: #fff;
@@ -280,6 +821,129 @@ li input, button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+@font-face {
+  font-family: "open", sans-serif;
+  src: url(../font/OpenSans_Condensed-Regular.ttf);
+}
+body main {
+  width: 100%;
+}
+body main .category {
+  height: 950px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "open", sans-serif;
+  background-image: url("img/category/banner_category.jpg");
+  box-shadow: inset 10000px 0 0 0 rgba(249, 246, 240, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main .category #category_opacity {
+  font-size: 200px;
+  color: #f4eee3;
+  z-index: 1;
+  position: relative;
+  top: -315px;
+  right: -800px;
+  font-family: "Cinzel", cursive;
+}
+body main .category .container_titre_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  top: -350px;
+  left: 150px;
+  margin: 10px;
+  z-index: 2;
+  text-align: center;
+}
+body main .category .container_titre_article h2 {
+  font-size: 50px;
+  font-family: "Cinzel", cursive;
+}
+body main .category .container_titre_article p {
+  font-size: 20px;
+}
+body main .category .container_titre_article h2, body main .category .container_titre_article p {
+  width: 1000px;
+  margin: 10px;
+}
+body main .category .container_article_global {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 1000px;
+  top: 50px;
+}
+body main .category .container_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 200px;
+  margin: 15px;
+  background-color: white;
+}
+body main .category .container_article p {
+  font-size: 18px;
+  color: black;
+  margin: 20px;
+}
+body main .category .container_article .icon_dore {
+  width: 100px;
+  height: 70px;
+}
+body main .category .container_article .icon_blanc {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+body main .category .container_article .fleche_blanche {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+body main .category .container_article:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 200px;
+  margin: 15px;
+  background-color: #d6ae6a;
+}
+body main .category .container_article:hover p {
+  font-size: 18px;
+  color: white;
+  margin: 20px;
+}
+body main .category .container_article:hover .icon_dore {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+body main .category .container_article:hover .icon_blanc {
+  visibility: visible;
+  width: 100px;
+  height: 70px;
+}
+body main .category .container_article:hover .fleche_blanche {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
