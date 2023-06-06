@@ -42,6 +42,30 @@ footer .basdepage {
   justify-content: space-between;
   padding-bottom: 5em;
 }
+footer .basdepage ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: auto;
+}
+footer .basdepage ul li i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .basdepage ul li i:hover {
+  color: white;
+  background-color: #C8A969;
+  transition: 0.3s;
+}
 footer .basdepage p {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -104,31 +128,6 @@ footer ul:nth-child(4) {
   width: 6em;
 }
 
-.basdepage ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  width: auto;
-}
-.basdepage ul li i {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 2.5em;
-  aspect-ratio: 1/1;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
-  color: rgba(255, 255, 255, 0.6);
-}
-.basdepage ul li i:hover {
-  color: white;
-  background-color: #C8A969;
-  transition: 0.3s;
-}
-
 input {
   width: 100%;
   border-radius: 0;
@@ -138,7 +137,7 @@ input {
   outline: none;
 }
 
-button {
+li button {
   padding: 1.78em;
   border-radius: 0;
   border: none;
@@ -146,11 +145,11 @@ button {
   transform: translate(-2px, 4px);
   position: absolute;
 }
-button:hover {
+li button:hover {
   background-color: #c19977;
   transition: 0.3s;
 }
-button i {
+li button i {
   color: white;
 }
 
@@ -162,7 +161,7 @@ footer li {
   padding-bottom: 1.5em;
 }
 
-input, button {
+li input, button {
   margin-top: 1em;
 }
 
@@ -218,30 +217,62 @@ input, button {
   }
 }
 @media only screen and (max-width: 480px) {
-  .bloc {
+  footer .bloc {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
   }
-  .bloc ul {
+  footer .bloc ul {
     width: 100%;
   }
-  .bloc ul:nth-child(3) {
+  footer .bloc ul:nth-child(3) {
     width: 100%;
   }
-  .bloc ul:nth-child(4) {
+  footer .bloc ul:nth-child(4) {
     width: 100%;
     min-width: 100%;
   }
-  input {
+  footer input {
     width: 83%;
   }
-  .basdepage ul {
+  footer .basdepage ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+.ourblog {
+  width: 100%;
+  background-color: #fff;
+}
+.ourblog__underimage img {
+  width: 25px;
+}
+.ourblog article {
+  border: 2px solid red;
+  width: 30em;
+}
+.ourblog h2 {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+}
+.ourblog p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ourblog h2, .ourblog p {
+  text-align: center;
+}
+.ourblog__article {
+  gap: 10em;
+  border: 2px solid red;
+}
+
+.ourblog__article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

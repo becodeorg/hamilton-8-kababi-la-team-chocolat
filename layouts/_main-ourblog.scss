@@ -1,0 +1,43 @@
+@import '../base/font';
+
+
+.ourblog{
+    width: 100%;
+    background-color: #fff;
+    
+    &__underimage img{
+        width: 25px;
+    }
+    
+    article{
+        border: 2px solid red;
+        width: 30em;
+    }
+
+    & h2{
+        font-family: $Cinzel;
+        text-transform: uppercase;
+    }
+
+    & p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    & h2,p{
+        text-align: center;
+    }
+
+    &__article{
+       
+       gap: 1em;
+       border: 2px solid red;
+    }
+}
+
+.ourblog__article{
+    @include flex-row;
+}
+
+.ourblog__underimage li{
+    @include flex-row;
+}
