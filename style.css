@@ -135,6 +135,7 @@ input {
   border: none;
   padding: 1.19em;
   font-size: 1em;
+  outline: none;
 }
 
 button {
@@ -144,6 +145,10 @@ button {
   background-color: #C8A969;
   transform: translate(-2px, 4px);
   position: absolute;
+}
+button:hover {
+  background-color: #c19977;
+  transition: 0.3s;
 }
 button i {
   color: white;
@@ -231,6 +236,11 @@ input, button {
   }
   input {
     width: 83%;
+  }
+  .basdepage ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
