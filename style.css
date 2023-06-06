@@ -12,27 +12,11 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "fa-brands-400";
-  src: url("font/fa-brands-400.woff2") format(woff2);
-}
-@font-face {
-  font-family: "fa-light-300";
-  src: url("font/fa-light-300.woff2") format(woff2);
-}
-@font-face {
-  font-family: "fa-regular-400";
-  src: url("font/fa-regular-400.woff2") format(woff2);
-}
-@font-face {
-  font-family: "fa-solid-900";
-  src: url("font/fa-solid-900.woff2") format(woff2);
-}
 footer {
   width: 100%;
   background-image: url("img/footer/bg_footer.jpg");
   color: white;
-  padding: 0 16em;
+  padding: 0 15%;
 }
 footer figure {
   display: flex;
@@ -42,12 +26,13 @@ footer figure {
   padding: 4em 0 3em 0;
 }
 footer figure img {
-  width: 25%;
+  width: 20em;
 }
 footer h3 {
   font-family: "Cinzel", serif;
   font-size: 2em;
   padding-bottom: 0.5em;
+  text-transform: capitalize;
 }
 footer .basdepage {
   display: flex;
@@ -73,7 +58,7 @@ footer .bloc {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   justify-content: space-between;
   padding-bottom: 5em;
   margin-bottom: 1.5em;
@@ -92,7 +77,6 @@ li {
   display: flex;
   flex-direction: row;
 }
-
 li img {
   width: 20px;
   margin-right: 1em;
@@ -112,7 +96,6 @@ footer ul:nth-child(4) {
 .container {
   position: relative;
 }
-
 .container__logorond {
   position: absolute;
   bottom: -3em;
@@ -121,21 +104,6 @@ footer ul:nth-child(4) {
   width: 6em;
 }
 
-/*.basdepage a{
-    @include flex-row;
-    width: 2em;
-    aspect-ratio: 1 / 1;
-    background-color: rgba($color: #fff, $alpha: 0.1);
-    border-radius: 100px;
-    color: rgba($color: #fff, $alpha: 0.6);
-
-
-}
-*/
-/*.basdepage a{button i {
-    width: 15em;
-}
-*/
 .basdepage ul {
   display: flex;
   flex-direction: row;
@@ -162,19 +130,20 @@ footer ul:nth-child(4) {
 }
 
 input {
-  width: 18em;
+  width: 100%;
   border-radius: 0;
   border: none;
-  padding: 1.2em;
+  padding: 1.19em;
   font-size: 1em;
 }
 
 button {
-  padding: 1.8em;
+  padding: 1.78em;
   border-radius: 0;
   border: none;
   background-color: #C8A969;
-  transform: translate(-15px, -1px);
+  transform: translate(-2px, 4px);
+  position: absolute;
 }
 button i {
   color: white;
@@ -192,26 +161,77 @@ input, button {
   margin-top: 1em;
 }
 
-li a:not(:last-child) {
-  color: white;
-  opacity: 65%;
+@media only screen and (max-width: 1800px) {
+  .basdepage {
+    margin-top: 5em;
+  }
 }
-
-@font-face {
-  font-family: "fa-brands-400";
-  src: url("font/fa-brands-400.woff2") format(woff2);
+@media only screen and (min-width: 768px) and (max-width: 1586px) {
+  .bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .bloc ul {
+    width: 50%;
+  }
+  .bloc ul:nth-child(4) {
+    width: 50%;
+    max-width: 50%;
+  }
+  .bloc ul:nth-child(3) {
+    width: 50%;
+    max-width: 50%;
+  }
+  figure img {
+    width: 25em;
+  }
+  input {
+    width: 76%;
+  }
 }
-@font-face {
-  font-family: "fa-light-300";
-  src: url("font/fa-light-300.woff2") format(woff2);
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .bloc ul {
+    width: 100%;
+  }
+  .bloc ul:nth-child(3) {
+    width: 100%;
+  }
+  .bloc ul:nth-child(4) {
+    width: 100%;
+    min-width: 100%;
+  }
+  input {
+    width: 83%;
+  }
 }
-@font-face {
-  font-family: "fa-regular-400";
-  src: url("font/fa-regular-400.woff2") format(woff2);
-}
-@font-face {
-  font-family: "fa-solid-900";
-  src: url("font/fa-solid-900.woff2") format(woff2);
+@media only screen and (max-width: 480px) {
+  .bloc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .bloc ul {
+    width: 100%;
+  }
+  .bloc ul:nth-child(3) {
+    width: 100%;
+  }
+  .bloc ul:nth-child(4) {
+    width: 100%;
+    min-width: 100%;
+  }
+  input {
+    width: 83%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

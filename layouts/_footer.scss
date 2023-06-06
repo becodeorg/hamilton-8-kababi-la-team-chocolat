@@ -3,7 +3,7 @@ footer{
     width: 100%;
     background-image: url("img/footer/bg_footer.jpg");
     color: white;
-    padding: 0 16em;
+    padding: 0 15%;
     
 
     & figure{
@@ -11,7 +11,7 @@ footer{
         padding: 4em 0 3em 0;
 
         & img{
-            width: 25%;
+            width: 20em;
         }
     }
 
@@ -19,6 +19,7 @@ footer{
         font-family: $Cinzel;
         font-size: 2em;
         padding-bottom: 0.5em;
+        text-transform: capitalize;
     }
     
     .basdepage{
@@ -44,7 +45,7 @@ footer{
     
     & .bloc{
         @include footer-flex-row();
-        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+        border-bottom: 2px solid rgba($color: #fff, $alpha: 0.1);
         justify-content: space-between;
         padding-bottom: 5em;
         margin-bottom: 1.5em;
@@ -65,13 +66,14 @@ li{
     font-size: 1.1em;
     display: flex;
     flex-direction: row;
-}
 
-li img{
-    width: 20px;
-    margin-right: 1em;
-    display: flex;
-    flex-direction: row;
+
+    & img{
+        width: 20px;
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row;
+}
 }
 
 footer ul:nth-child(3){
@@ -86,31 +88,17 @@ footer ul:nth-child(4){
 
 .container{
     position: relative;
+
+
+    &__logorond{
+        position: absolute;
+        bottom: -3em;
+        left: 49%;
+        transform: translateX(-35%);
+        width: 6em;
+    }
 }
 
-.container__logorond{
-    position: absolute;
-    bottom: -3em;
-    left: 49%;
-    transform: translateX(-35%);
-    width: 6em;
-}
-
-/*.basdepage a{
-    @include flex-row;
-    width: 2em;
-    aspect-ratio: 1 / 1;
-    background-color: rgba($color: #fff, $alpha: 0.1);
-    border-radius: 100px;
-    color: rgba($color: #fff, $alpha: 0.6);
-    
-    
-}
-*/
-/*.basdepage a{button i {
-    width: 15em;
-}
-*/
 .basdepage ul{
     @include flex-row();
     gap: 0.5em;
@@ -137,19 +125,20 @@ footer ul:nth-child(4){
 
 input{
     
-    width: 18em;
+    width: 100%;
     border-radius: 0;
     border: none;
-    padding: 1.2em;
+    padding: 1.19em;
     font-size: 1em;
 }
 
 button{
-    padding: 1.8em;
+    padding: 1.78em;
     border-radius: 0;
     border: none;
     background-color: #C8A969;
-    transform: translate(-15px, -1px);
+    transform: translate(-2px, 4px);
+    position: absolute;
     
     
 
@@ -169,9 +158,89 @@ input, button{
     margin-top: 1em;
 }
 
-li a:not(:last-child) {
-    color: white;
-    opacity: 65%;
+
+// 480 tel 768 tablette
+@media only screen and (max-width:1800px){
+    .basdepage{
+        margin-top: 5em;
+    }
 }
 
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1586px){
+    .bloc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
 
+        & ul{
+            width: 50%;
+        }
+        ul:nth-child(4){
+            width: 50%;
+            max-width: 50%;
+            
+        }
+        ul:nth-child(3){
+            width: 50%;
+            max-width: 50%; 
+        }
+    }
+    figure{
+        & img{
+            width: 25em;
+        }
+    }
+    input{
+        width: 76%;
+    }
+}
+
+@media only screen 
+and (min-width: 480px) 
+and (max-width: 768px){
+    .bloc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        ul{
+            width: 100%;
+        }
+        ul:nth-child(3){
+            width: 100%;
+             
+        }
+        ul:nth-child(4){
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    input{
+        width: 83%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .bloc{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        ul{
+            width: 100%;
+        }
+        ul:nth-child(3){
+            width: 100%;   
+        }
+        ul:nth-child(4){
+            width: 100%;
+            min-width: 100%; 
+        }
+    }
+    input{
+        width: 83%;
+    }
+}
