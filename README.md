@@ -1,1 +1,29 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kMR8HjA5)
+# Kababi restaurant de la team chocolat
+
+## HTML :
+-----------
+Réalisé par Nicolas et Bathsheba.
+
+## 7 to 1 :
+------------
+
+Mis en place par nicolas.
+
+## Image et font: 
+-------------------
+
+Font importer en commun.
+Image trier, renommer, etc par Bathsheba.
+Icon manquant tel,calendrier, etc réalisé par nicolas.
+Icon de la category réalisé par ma fille.
+
+## Header et Category :
+------------------------
+
+Réalisé par Bathsheba.
+
+## Footer et Blog :
+--------------------
+
+Réalisé par Nicolas.
+
