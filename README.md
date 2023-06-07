@@ -14,7 +14,7 @@ Mis en place par nicolas.
 
 Font importer en commun.
 Image trier, renommer, etc par Bathsheba.
-Icon manquant tel,calendrier, etc réalisé par nicolas.
+Icon manquant tel,calendrier, etc réalisé par Nicolas.
 Icon de la category réalisé par ma fille.
 
 ## Header et Category :
