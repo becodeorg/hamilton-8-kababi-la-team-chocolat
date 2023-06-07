@@ -783,9 +783,6 @@ body header .explore:hover .fleche_blanche {
   background-color: #fff;
   padding: 0 15%;
 }
-.ourblog.fa-solid {
-  padding-left: 1vw;
-}
 .ourblog__header {
   display: flex;
   flex-direction: column;
@@ -812,6 +809,9 @@ body header .explore:hover .fleche_blanche {
   background-color: white;
   font-size: 0.8vw;
   border-radius: 5px;
+}
+.ourblog .readmore .fa-solid {
+  padding-left: 1vw;
 }
 .ourblog .readmore:hover {
   background-color: #C8A969;

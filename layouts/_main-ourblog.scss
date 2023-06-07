@@ -6,11 +6,6 @@
     background-color: #fff;
     padding: 0 15%;
 
-    &.fa-solid{
-        padding-left: 1vw;
-    }
-    
-
     &__header{
         @include flex-column;
         position: relative;
@@ -37,6 +32,10 @@
         background-color: white;
         font-size: 0.8vw;
         border-radius: 5px;
+
+            & .fa-solid{
+                padding-left: 1vw;
+            }
         
             &:hover{
                 background-color: #C8A969;
