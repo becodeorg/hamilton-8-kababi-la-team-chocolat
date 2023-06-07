@@ -50,7 +50,7 @@
     article{
         width: 25vw;
         background-color: #FAF6F0;
-
+        height: 40vh;
     }
 
     & h2{
@@ -116,4 +116,8 @@
 @keyframes colorchange {
     from { background-color: white;}
     to { background-color: #C8A969;}
+}
+
+.fa-solid{
+    padding-left: 1vw;
 }

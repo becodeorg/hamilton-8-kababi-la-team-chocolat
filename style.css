@@ -824,6 +824,7 @@ body header .explore:hover .fleche_blanche {
 .ourblog article {
   width: 25vw;
   background-color: #FAF6F0;
+  height: 40vh;
 }
 .ourblog h2 {
   font-family: "Cinzel", cursive;
@@ -892,6 +893,10 @@ body header .explore:hover .fleche_blanche {
     background-color: #C8A969;
   }
 }
+.fa-solid {
+  padding-left: 1vw;
+}
+
 @font-face {
   font-family: "open", sans-serif;
   src: url(../font/OpenSans_Condensed-Regular.ttf);
