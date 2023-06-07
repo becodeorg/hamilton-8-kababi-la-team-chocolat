@@ -783,6 +783,9 @@ body header .explore:hover .fleche_blanche {
   background-color: #fff;
   padding: 0 15%;
 }
+.ourblog.fa-solid {
+  padding-left: 1vw;
+}
 .ourblog__header {
   display: flex;
   flex-direction: column;
@@ -884,10 +887,6 @@ body header .explore:hover .fleche_blanche {
   display: flex;
   justify-content: space-around;
   padding: 5em 0 8em 0;
-}
-
-.fa-solid {
-  padding-left: 1vw;
 }
 
 @media only screen and (max-width: 1250px) {
