@@ -18,6 +18,12 @@
     align-items: flex-start;
     justify-content: center; 
 }
+@mixin category-flex-column(){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+}
 @mixin bg_header(){
     background-image: url("img/header/banner_header.jpg");
     background-repeat: no-repeat;
