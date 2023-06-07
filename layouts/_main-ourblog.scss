@@ -4,18 +4,41 @@
 .ourblog{
     width: 100%;
     background-color: #fff;
-    min-height: 100vh;
+    padding: 0 15%;
 
+    &__header{
+        @include flex-column;
+        position: relative;
+        z-index: 20;
+        margin: 10vh 0vw;
+    }
+    
+    & #background-text{
+            font-size: 10vw;
+            color: #f4eee3;
+            z-index: 10;
+            position: absolute;
+            left: -9vw;
+            font-family: 'Cinzel', cursive;
+            
+    }
+    
     .readmore{
         color: black;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 700;
         text-transform: uppercase;
-        padding: 1em 2.5em;
+        padding: 1.5em 2.5em;
         background-color: white;
         font-size: 0.8em;
         border-radius: 5px;
-        }
+        
+            &:hover{
+                background-color: #C8A969;
+                color: white;
+                transition: all 0.3s ease;
+            }    
+    }
     
     &__underimage img{
         width: 15px;
@@ -25,7 +48,6 @@
     }
     
     article{
-        border: 2px solid red;
         width: 25vw;
         background-color: #FAF6F0;
 
@@ -34,25 +56,25 @@
     & h2{
         font-family: $Cinzel;
         text-transform: uppercase;
+        font-size: 2.7em;
     }
 
     & p{
         font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.5em;
+
     }
 
     & h2,p{
         text-align: center;
+        z-index: 1000;
     }
 
     &__article{
-       
        gap: 1em;
-       border: 2px solid red;
     }
     .underimage-padding{
-        padding: 1em;
-        margin-bottom: 1em;
-        margin: 2em;
+        padding: 2.5em 2em 3.5em 2em;
 
         h4{
             font-family: $Cinzel;
@@ -64,6 +86,7 @@
 
 .ourblog__article{
     @include flex-row;
+    gap: 1.5em;
     & .img img{
         width: 100%;
     }
@@ -84,4 +107,13 @@
         }
     }
 
-   
+.img__bdp{
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 0 8em 0;
+}
+
+@keyframes colorchange {
+    from { background-color: white;}
+    to { background-color: #C8A969;}
+}
